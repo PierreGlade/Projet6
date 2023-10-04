@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/login.css" />
+    <title>Login.html</title>
+  </head>
+  <body>
+    <header class="flex">
+      <h1 class="flex column">Sophie Bluel <span>Architecte d'intérieur</span></h1>
+      <nav>
+        <ul class="flex">
+          <li><a class="projects" href="index.html">projets</a></li>
+          <li>contact</li>
+          <li><a href="login.html">login</a></li>
+          <li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="flexCenter column">
+      <h2>Log In</h2>
+    <form id="loginForm">
+      <label for="email">E-mail</label>
+      <input type="text" id="email" name="email" />
+      <br />
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" name="password" />
+      <br />
+    
+      <input type="submit" value="Se connecter" id="connect">
+    </form>
+    </section>
+    <p id="status"></p>
+    <p>Mot de passe oublié</p>
+    <script src="./scripts/api.js"></script>
+    <script src="./scripts/login.js"></script>
+  </body>
+</html>
